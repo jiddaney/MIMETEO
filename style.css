@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./media/pexels-juanmt-30213779.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+element.style {
+    border: solid 1px #00000057;
+    border-radius: 7px;
+}
