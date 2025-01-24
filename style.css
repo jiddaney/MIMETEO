@@ -1,0 +1,133 @@
+
+    body {
+        background-size: cover;
+        background-image: url('media/pexels-juanmt-30213779.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-size: cover ;
+        background-attachment: fixed;
+        
+        
+    }
+    .container-fluid{
+        height: 98vh;
+
+    }
+    img, svg {
+        vertical-align: middle;
+        width: 60px;
+        height: 60px;
+    }
+    
+  
+    
+    .navbar, .mobile-navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .navbar li, .mobile-navbar li {
+        display: inline;
+    }
+    
+    .repo-link {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .search-city, .mobile-search-city {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        width: 99%;
+
+    }
+    
+    .location-name {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .temperature-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .weather-type {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .additionals-first-row, .additionals-second-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .air-quality-additional, .real-feel-additional, .humidity-additional, 
+    .max-temperature-additional, .min-temperature-additional, .wind-speed-additional, 
+    .wind-direction-additional, .visibility-additional, .pressure-additional, 
+    .sunrise-additional, .sunset-additional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .daily-forecast {
+        margin: 20px 0;
+    }
+    
+    .daily-forecast-label {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .forecast-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }.tp{
+        border: solid;
+        background-color: rgba(99, 99, 99, 0.459);
+    }
+    
+    .daily-forecast-card {
+        background: rgba(102, 102, 102, 0.41);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+        width: 100px;
+    }
+    
+    .daily-forecast-date, .daily-forecast-logo, .max-min-temperature-daily-forecast, 
+    .weather-type-daily-forecast {
+        margin: 5px 0;
+    }
+    
+    .max-daily-forecast, .min-daily-forecast {
+        display: block;
+    }
+    
