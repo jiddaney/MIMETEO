@@ -1,32 +1,5 @@
 var cityInput = document.getElementById("searchCity");
 
-var backgroundsList = [
-  "day1.jpg",
-  "day2.jpg",
-  "day3.jpg",
-  "day4.jpg",
-  "day5.jpg",
-  // "night1.jpg",
-  // "night2.jpg",
-  // "night3.jpg",
-  // "night4.jpg",
-  // "night5.jpg",
-  "cloudy1.jpg",
-  "cloudy2.jpg",
-  "cloudy3.jpg",
-  "cloudy4.jpg",
-  "cloudy5.jpg",
-  // "rainy1.jpg",
-  // "rainy2.jpg",
-  // "rainy3.jpg",
-  // "rainy4.jpg",
-  // "rainy5.jpg",
-];
-
-var randomBackground = backgroundsList[Math.floor(Math.random() * backgroundsList.length)];
-
-// document.body.style.background = "url('media/" + randomBackground + "')";
-
 cityInput.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     loader();
@@ -56,14 +29,11 @@ cityInput.addEventListener("keyup", function (event) {
       parentElement2.appendChild(img2);
       parentElement3.appendChild(img3);
 
-      // document.getElementById("loader1").src = "icons/loader.gif";
-      // document.getElementById("loader2").src = "icons/loader.gif";
-      // document.getElementById("loader3").src = "icons/loader.gif";
     }
 
     var cityInputValue = cityInput.value;
 
-    var apiKey = "b1fd6e14799699504191b6bdbcadfc35"; // Default
+    var apiKey = "b1fd6e14799699504191b6bdbcadfc35"; 
     var unit = "metric";
     var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInputValue}&appid=${apiKey}&units=${unit}`;
 
@@ -105,7 +75,7 @@ cityInput.addEventListener("keyup", function (event) {
                     maxTemp: -Infinity,
                     minTemp: Infinity,
                     weatherType: entry.weather[0].main
-                  };
+                  }; 
                 }
 
                 if (entry.main.temp_max > dailyForecasts[date].maxTemp) {
